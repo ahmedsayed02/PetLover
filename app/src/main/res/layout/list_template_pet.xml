@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@drawable/gradient_theme"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <TextView
+        android:id="@+id/nameOfPet_id"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:background="@drawable/border_registration"
+        android:text="NameOfPet"
+        android:textColor="#10100d"
+        android:textSize="14sp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/typePet_id"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_registration"
+
+        android:text="Type"
+        android:textSize="14sp"
+        android:layout_marginBottom="14dp"
+        android:textColor="#10100d"
+        android:textStyle="bold"
+        android:layout_below="@+id/nameOfPet_id"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/ImageOfPet_id"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/pet_icon" />
+
+
+    <ImageView
+        android:id="@+id/detalis_id"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/typePet_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/icon8"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile_id"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/add_clinics_id"
+            android:icon="@drawable/doctor_icon"
+            android:title="My Clinics" />
+        <item
+            android:id="@+id/appointment_id"
+            android:icon="@drawable/time_icon"
+            android:title="Appointment" />
+
+        <item
+            android:id="@+id/logout_id"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/contact_id"
+                android:icon="@drawable/ic_contact"
+                android:title="Contact Us" />
+
+        </menu>
+    </item>
+
+</menu>

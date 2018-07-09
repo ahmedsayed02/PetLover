@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="@drawable/gradient_theme"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_pet_img_id"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pet_icon" />
+
+        <TextView
+            android:id="@+id/name_pet_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/txtfieldback"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/gender_pet_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_pet_id"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/txtfieldback"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/type_pet_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_pet_id"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/txtfieldback"
+            android:padding="15dp"
+            android:textSize="20sp"
+            tools:ignore="UnknownId" />
+
+
+        <TextView
+            android:id="@+id/birthday_pet_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type_pet_id"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/txtfieldback"
+            android:padding="15dp"
+            android:textSize="20sp"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/pet_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/birthday_pet_id"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/txtfieldback"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/notes_pet_id"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/pet_color"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/txtfieldback"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Any Notes"
+            android:padding="15dp"
+            android:textSize="20sp"
+            tools:ignore="UnknownId" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_edit_pet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:background="@drawable/border_registration"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/btn_delete_pet"
+                android:layout_width="0dp"
+                android:background="@drawable/border_registration"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Bath"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="HairCut"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Nails"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bathImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/icon15"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/haircutImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/hair_cut"
+                android:gravity="center"
+
+                 />
+
+
+            <ImageView
+                android:id="@+id/teethImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/icon13"
+                android:gravity="center"
+              />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bath"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_login"
+                android:gravity="center"
+                android:inputType="date"
+                android:textColor="#d41500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hair"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_login"
+                android:gravity="center"
+                android:inputType="date"
+                android:textColor="#d41500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nails"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_login"
+                android:gravity="center"
+                android:inputType="date"
+                android:textColor="#d41500"
+                android:textSize="18sp"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/teeth1Image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/icon12"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/internalDewormingImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/intertnalicon"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/earsImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/icon11"
+                android:gravity="center"
+
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/teeth"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_login"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#d41500"
+                android:gravity="center"
+                android:inputType="date"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/internalDeworming"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#d41500"
+                android:gravity="center"
+                android:inputType="date"
+                android:background="@drawable/border_login"
+
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/ears"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_login"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#d41500"
+                android:gravity="center"
+                android:inputType="date"
+                android:layout_height="match_parent" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Teeth"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Vaccination"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ears"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+

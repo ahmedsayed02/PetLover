@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_theme"
+        android:paddingTop="5dp">
+
+        <ListView
+            android:id="@+id/listView_MyProduct_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradient_theme"
+            android:dividerHeight="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/listView_MyProduct_id"
+            android:layout_alignEnd="@+id/listView_MyProduct_id"
+            android:layout_alignRight="@+id/listView_MyProduct_id"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:src="@drawable/add_new_pet"
+            app:fabSize="normal"
+            app:layout_anchor="@id/listView_MyProduct_id"
+            app:layout_anchorGravity="bottom|right|end" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

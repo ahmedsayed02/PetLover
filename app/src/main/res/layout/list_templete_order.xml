@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/gradient_theme"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/Name_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Name :  " />
+
+
+    <TextView
+        android:id="@+id/Product11_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name_id"
+        android:padding="8dp"
+        android:text="Product :" />
+
+
+    <TextView
+        android:id="@+id/Address11_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Product11_id"
+        android:padding="8dp"
+        android:text="Address : " />
+
+    <TextView
+        android:id="@+id/Mobile11_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Address11_id"
+        android:padding="8dp"
+        android:text="Mobile : " />
+
+
+</RelativeLayout>

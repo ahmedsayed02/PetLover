@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="@drawable/gradient_theme"
+    android:orientation="vertical">
+
+
+    <!--by3mlaha crop fi el center3an taree2 scaleType -->
+
+    <ImageView
+        android:id="@+id/profile_id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/update_icon" />
+
+
+    <TextView
+        android:id="@+id/named_id1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/txtfieldback"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="20sp" />
+    <!--hn3ml calender fi el age-->
+
+    <TextView
+        android:id="@+id/email_id1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/txtfieldback"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/mobile_id1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/txtfieldback"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/address_id1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/txtfieldback"
+        android:hint="@string/address"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/update_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/txtfieldback"
+        android:text="Update your info"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

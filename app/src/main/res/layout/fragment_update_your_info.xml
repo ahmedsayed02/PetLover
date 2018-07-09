@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_theme"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context="com.example.ahmedsayed.navdrawer.UpdateYourInfo">
+
+
+    <ImageView
+        android:id="@+id/profile_edit_id"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/update_icon" />
+
+
+    <EditText
+        android:id="@+id/etNamed_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/txtfieldback"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="20sp" />
+    <!--hn3ml calender fi el age-->
+
+    <EditText
+        android:id="@+id/etPassword_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/txtfieldback"
+        android:hint="@string/passwordHint"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/etMobile_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/txtfieldback"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etAddress_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/txtfieldback"
+        android:hint="@string/address"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/saveInfo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/txtfieldback"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+</LinearLayout>

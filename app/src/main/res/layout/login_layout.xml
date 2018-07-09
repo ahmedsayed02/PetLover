@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_theme"
+    >
+    <ImageView
+        android:layout_width="100pt"
+        android:layout_height="70pt"
+        android:src="@drawable/funny_icon"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Profile Image" />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textAllCaps="false"
+        android:textColor="#141415"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@+id/et_email"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAllCaps="false"
+        android:textColor="#000218"
+        android:textSize="20dp"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:shadowColor="#e13f0e"
+        android:clickable="true"
+        android:layout_marginRight="10dp"
+        android:text="Remember me" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_id"
+        style="?android:attr/progressBarStyle"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_login"
+        android:text="@string/login"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#1a1a18"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/register_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_registration"
+        android:text="@string/sign_up"
+        android:layout_below="@+id/btn_login"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#0a0a0a"
+        android:textSize="20sp" />
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

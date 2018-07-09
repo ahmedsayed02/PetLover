@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_theme"
+
+    android:layout_marginTop="?android:attr/actionBarSize">
+
+
+
+    <LinearLayout
+        android:id="@+id/filter_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_theme"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.75"
+            android:id="@+id/RG_productFilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/RB_food"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Food"/>
+
+            <RadioButton
+                android:padding="4dp"
+                android:id="@+id/RB_animal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Animal"/>
+
+            <RadioButton
+                android:padding="4dp"
+                android:id="@+id/RB_accessories"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Accessories"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_filterProduct"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="60dp"
+            android:background="@drawable/filter_icon11" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@id/filter_product"
+        android:id="@+id/listView_accessories_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_theme"
+        android:dividerHeight="2dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile_id"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/mypet_id"
+            android:icon="@drawable/animal_icon"
+            android:title="My Pets" />
+        <item
+            android:id="@+id/appointment_id"
+            android:icon="@drawable/time_icon"
+            android:title="Appointment" />
+
+        <item
+            android:id="@+id/order_id"
+            android:icon="@drawable/request_icon"
+            android:title="Orders" />
+
+        <item
+            android:id="@+id/clinic_id"
+            android:icon="@drawable/doctor_icon"
+            android:title="Clinics" />
+
+        <item
+            android:id="@+id/accessories_id"
+            android:icon="@drawable/accessories_icon"
+            android:title="Accessories" />
+
+
+
+        <item
+            android:id="@+id/logout_id"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/contact_id"
+                android:icon="@drawable/ic_contact"
+                android:title="Contact Us" />
+
+        </menu>
+    </item>
+
+</menu>

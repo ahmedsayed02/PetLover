@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_theme"
+    android:layout_marginTop="?android:attr/actionBarSize">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:id="@+id/filter_clinics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_theme"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+        <Button
+            android:id="@+id/btn_filterClinics"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="60dp"
+            android:background="@drawable/filter_icon11"
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView_Clinics_id"
+        android:layout_below="@id/filter_clinics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_theme"
+        android:dividerHeight="2dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

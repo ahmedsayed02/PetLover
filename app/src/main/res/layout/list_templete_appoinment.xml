@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/gradient_theme"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="2">
+
+    <TextView
+        android:id="@+id/FromAppo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_registration"
+        android:padding="8dp"
+        android:text="From : " />
+
+
+    <TextView
+        android:id="@+id/Day_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FromAppo_id"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_registration"
+        android:padding="8dp"
+        android:text="Day " />
+
+    <TextView
+        android:id="@+id/NameOfUser_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Name of user"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@+id/Confirm_id" />
+
+    <TextView
+        android:id="@+id/Confirm_id"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Day_id"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/border_login"
+        android:padding="8dp"
+        android:text="Confirmed Or Un Confirmed"
+        android:textColor="#07ac0f"
+        android:textSize="20sp"
+        tools:ignore="UnknownId" />
+
+    <ImageButton
+        android:id="@+id/appointment_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:src="@drawable/icon_clock"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>

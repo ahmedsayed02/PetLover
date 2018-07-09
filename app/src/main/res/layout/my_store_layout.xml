@@ -1,0 +1,153 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:background="@drawable/gradient_theme"
+    android:orientation="vertical"
+    tools:context="com.example.ahmedsayed.navdrawer.add_new_pet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/clinic_icon" />
+
+        <EditText
+            android:id="@+id/StoreName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/txtfieldback"
+            android:hint="Store Name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/contact_store_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/txtfieldback"
+            android:hint="Store Contact"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:textSize="20sp" />
+        ///time picker ....... from w to 2 text view
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/workingHours1_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Working Hours :"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/from1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workingHours1_id"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/FromTime1_id"
+                android:layout_toStartOf="@+id/FromTime1_id"
+                android:background="@drawable/border_registration"
+                android:text="Open at "
+                android:textColor="#0aac04"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="UnknownId" />
+
+            <TextView
+                android:id="@+id/to1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/from1_text"
+                android:layout_alignStart="@+id/from1_text"
+                android:layout_below="@+id/FromTime1_id"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_registration"
+                android:text="Closed at "
+
+                android:textColor="#0aac04"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="UnknownId" />
+
+            <TimePicker
+                android:id="@+id/FromTime1_id"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/workingHours1_id"
+                android:numbersInnerTextColor="#dd0cca05"
+                android:timePickerMode="spinner"
+
+                />
+
+            <TimePicker
+                android:id="@+id/TOTime1_id"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_alignRight="@id/FromTime1_id"
+                android:layout_below="@+id/FromTime1_id"
+                android:timePickerMode="spinner" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/adress_store_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/txtfieldback"
+            android:hint="Address"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textSize="20sp" />
+
+
+
+
+        <Button
+            android:id="@+id/add_new_prod_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/border_registration"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

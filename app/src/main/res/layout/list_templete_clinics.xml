@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_theme"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/NameOfDocotr_id"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Doctor Name"
+        android:background="@drawable/border_registration"
+        android:padding="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/OpenAt_id"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Open from 12:00 Pm"
+        android:padding="8dp"
+        android:background="@drawable/border_registration"
+
+        android:layout_below="@+id/NameOfDocotr_id"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/ClosedAt_id"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:text="Closed at 8:00 Pm"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/border_registration"
+
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/OpenAt_id"
+        android:layout_below="@id/NameOfDocotr_id"
+        tools:ignore="UnknownId" />
+    
+    <TextView
+        android:id="@+id/clinicAddress_id"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+
+        android:background="@drawable/border_registration"
+        android:layout_below="@id/OpenAt_id"
+        android:text="address"/>
+
+    <TextView
+        android:id="@+id/clinicPhone_id"
+        android:layout_width="100dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/border_registration"
+        android:layout_below="@id/clinicAddress_id"
+        android:text="phone"/>
+
+    <TextView
+        android:id="@+id/clinicDoctor_id"
+        android:layout_width="150dp"
+        android:padding="8dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@id/clinicPhone_id"
+        android:background="@drawable/txtfieldback"
+        android:text="Doctor's Clinic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>
